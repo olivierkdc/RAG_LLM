@@ -32,21 +32,26 @@ This project is a **Retrieval-Augmented Generation (RAG)** powered chatbot desig
 ### Steps
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/RAG-Powered-Chatbot.git
-   cd RAG-Powered-Chatbot
-   ```
+   git clone https://github.com/olivierkdc/RAG_LLM_.git
+   cd RAG_LLM
+   ```   
 2. **Install Dependencies**: 
  - Install the required Python libraries:
     ```bash
     pip install sentence-transformers faiss-cpu beautifulsoup4 nltk numpy
     ```
 3. **Prepare the Dataset**:
- - Place your unstructured text data (e.g., capital_one_financial_report_2023.txt) in the data/ directory.
+ - Place your unstructured text data (e.g., freddie_mac.txt) in the data/raw/ directory.
   
 4. **Run the Pipeline**: 
- - Execute the RAG pipeline to query the chatbot:
+ - Execute the RAG pipeline to query the chatbot, specifying the job_type:
+   - pass RAG to process the data/raw. current system hardcodes the relevant file in the raw data.
+   - pass LLM to utilize the chatbot. 
     ```bash
-    python src/main.py
+    python app.py RAG
+    ```          
+    ```bash
+    python app.py LLM
     ```          
 ---
 
