@@ -142,7 +142,7 @@ if __name__ == '__main__':
             execute_LLM_agent()
         elif job_type in ('rag','data','preparation','prep'):
             prepare_RAG_dataset()
-        elif job_type in ('evaluation','validation','test','benchmark'):
+        elif job_type in ('evaluation','evaluate','validation','validate','test','benchmark'):
             benchmark_agent()
         else:
             print("Please specify a proper job_type. Pass 'LLM' to chat with the agent, or pass 'RAG' to prepare the dataset.")
