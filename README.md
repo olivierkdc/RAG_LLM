@@ -32,7 +32,7 @@ This project is a **Retrieval-Augmented Generation (RAG)** powered chatbot desig
 ### Steps
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/olivierkdc/RAG_LLM_.git
+   git clone https://github.com/olivierkdc/RAG_LLM.git
    cd RAG_LLM
    ```   
 2. **Install Dependencies**: 
@@ -58,7 +58,8 @@ This project is a **Retrieval-Augmented Generation (RAG)** powered chatbot desig
 ## 📚 Requirements
 
 1. Below are the dependencies required for the project:
-
+   Depencies can be found inside the requirements.txt file.
+   
  - **Sentence Transformers**: sentence-transformers
  - **FAISS**: faiss-cpu
  - **BeautifulSoup (for cleaning HTML)**: beautifulsoup4
@@ -67,7 +68,7 @@ This project is a **Retrieval-Augmented Generation (RAG)** powered chatbot desig
 
 2. Install all dependencies with:
     ```bash
-    pip install sentence-transformers faiss-cpu beautifulsoup4 nltk numpy
+    pip install -r requirements.txt
     ```
 ---
 
