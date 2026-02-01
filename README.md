@@ -101,7 +101,7 @@ Build a Q&A chatbot that utilizes Retrieval-Augmented Generation (RAG) to provid
 ### **Outcome**
 - A GitHub-hosted project with:
   - Complete source code.
-  - Interactive demo (web or CLI-based).
+  - Interactive demo (web or CLI-based). (Work in Progress)
   - Documentation explaining implementation details and usage.
 
 ### **Applications**
