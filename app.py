@@ -13,6 +13,7 @@ from sentence_transformers import SentenceTransformer
 import faiss
 import subprocess
 
+from agent.config import EMBEDDER_MODEL
 from agent.base import AI_Agent
 
 def prepare_RAG_dataset():
@@ -71,8 +72,8 @@ def prepare_RAG_dataset():
     print(f"Chunks saved to {output_file}")
 
     # Load a pre-trained model
-    model = SentenceTransformer("all-MiniLM-L6-v2")  # Lightweight and free to use
-
+    model = SentenceTransformer(EMBEDDER_MODEL)  # Ensure you utilize the same embedder model as the Agent down the line.
+    
     # Generate embeddings for all chunks
     embeddings = model.encode(chunks, convert_to_tensor=False)
 
@@ -124,3 +125,5 @@ if __name__ == '__main__':
             execute_LLM_agent()
         elif job_type in ('rag','data','preparation','prep'):
             prepare_RAG_dataset()
+        else:
+            print("Please specify a proper job_type. Pass 'LLM' to chat with the agent, or pass 'RAG' to prepare the dataset.")
