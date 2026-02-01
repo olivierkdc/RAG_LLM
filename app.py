@@ -17,6 +17,10 @@ from agent.config import EMBEDDER_MODEL
 from agent.base import AI_Agent
 
 def prepare_RAG_dataset():
+    """
+    Runs necessary steps to prepare the vector database for the RAG process.
+    If this function is not executed first, we will be querying an empty database and the agent will not have the context to support answers.
+    """
     print("Preparing RAG Dataset")
     
     # Load the text file
@@ -104,6 +108,11 @@ def prepare_RAG_dataset():
     print(f"Metadata saved to {metadata_file}")
 
 def execute_LLM_agent(verbose = False):
+    """
+    execute_LLM_agent.
+    Generates a user experience to pass in the user_query from the terminal.
+    :param verbose: Description turns on verbosity for the run of the agent. This will print the final prompts passed to the Agent.
+    """
     print("Executing LLM")
     AI = AI_Agent()
     print("Please utilize the AI Agent! Type 'exit' to quit.")
@@ -115,6 +124,14 @@ def execute_LLM_agent(verbose = False):
             break
         AI.run(user_query, verbose = verbose)
 
+def benchmark_agent():
+    """
+    WORK IN PROGRESS
+    This function will allow the user to evaluate the performance of the agent against a ground truth database.
+    The purpose of this function is to guide the development of the agents to identify the strengths and weakenesses of the model.    
+    """
+    print("Work in progress! This function does not perform anything yet.")
+    return 
 
 if __name__ == '__main__':
     if len(sys.argv) == 1:
@@ -125,5 +142,7 @@ if __name__ == '__main__':
             execute_LLM_agent()
         elif job_type in ('rag','data','preparation','prep'):
             prepare_RAG_dataset()
+        elif job_type in ('evaluation','validation','test','benchmark'):
+            benchmark_agent()
         else:
             print("Please specify a proper job_type. Pass 'LLM' to chat with the agent, or pass 'RAG' to prepare the dataset.")
