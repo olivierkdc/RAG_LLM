@@ -16,7 +16,7 @@ import subprocess
 from agent.config import EMBEDDER_MODEL
 from agent.base import AI_Agent
 
-def prepare_RAG_dataset():
+def prepare_RAG_dataset(company_name = "freddie_mac"):
     """
     Runs necessary steps to prepare the vector database for the RAG process.
     If this function is not executed first, we will be querying an empty database and the agent will not have the context to support answers.
@@ -25,7 +25,7 @@ def prepare_RAG_dataset():
     
     # Load the text file
     data_directory = "data"
-    file_name = "freddie_mac.txt"
+    file_name = f"{company_name}.txt"
     file_path = data_directory + "/raw/" + file_name
     
     with open(file_path, "r", encoding="utf-8") as file:

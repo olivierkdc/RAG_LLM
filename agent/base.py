@@ -6,7 +6,7 @@ import subprocess
 import numpy as np 
 from sentence_transformers import SentenceTransformer
 import faiss
-from .config import BASE_DIR, LOG_DIR, SCHEMA_DIR, PROMPT_DIR, AI_AGENT_MODEL, EMBEDDER_MODEL
+from .config import BASE_DIR, LOG_DIR, SCHEMA_DIR, PROMPT_DIR, AI_AGENT_MODEL, EMBEDDER_MODEL, logger
 
 class AI_Agent():
     def __init__(self):
@@ -63,10 +63,24 @@ class AI_Agent():
                 encoding="utf-8"
             )
             # Return the standard output
+
+            print("PRINTING STDOUT RAW ")
+            print(result.stdout)
+            print("PRINTING STDOUT ERROR")
+            print(result.stderr)
+            print("DONE PRINTING ")
             return result.stdout.strip()
         except Exception as e:
             print("Error during Ollama subprocess call:", str(e))
             return ""
+        
+    def log_run(self, user_query, final_prompt, final_output, retrieved_chunks, metadata):
+        logger.debug(f"User Query:\n {user_query}")
+        logger.debug(f"Final Prompt:\n {final_prompt}")
+        logger.debug(f"Final Output:\n {final_output}")
+        logger.debug(f"Retrieved Chunks:\n {retrieved_chunks}")
+        logger.debug(f"metadata:\n {metadata}")
+        return 
 
 
     def run(self, user_query, verbose):
@@ -79,4 +93,5 @@ class AI_Agent():
         if verbose: print(final_prompt)
         answer = self.generate_answer(prompt = final_prompt)
         print(answer)
+        self.log_run(user_query = user_query, final_prompt = final_prompt, final_output = answer, retrieved_chunks = retrieved_chunks, metadata = metadata)
         return 

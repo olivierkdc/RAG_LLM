@@ -8,3 +8,4 @@ sec_edgar_downloader
 bs4
 nltk
 sentence_transformers
+loguru
