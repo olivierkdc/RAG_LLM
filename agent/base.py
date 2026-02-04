@@ -9,12 +9,13 @@ import faiss
 from .config import BASE_DIR, LOG_DIR, SCHEMA_DIR, PROMPT_DIR, AI_AGENT_MODEL, EMBEDDER_MODEL, logger
 
 class AI_Agent():
-    def __init__(self):
+    def __init__(self, prompt_type):
         self.role = "Generic AI Agent"
         self.base_dir = BASE_DIR
         self.log_dir = LOG_DIR
         self.schema_dir = SCHEMA_DIR
         self.prompt_dir = PROMPT_DIR
+        self.prompt_type = prompt_type
 
     def retrieve_chunks(self, query, index, metadata, model):
         # Encode the query
@@ -33,7 +34,7 @@ class AI_Agent():
         return results
 
 
-    def create_prompt(self, user_query, retrieved_chunks = None):
+    def create_prompt(self, user_query, retrieved_chunks = None, ground_truth = None, agent_answer = None):
         # Combine retrieved chunks into a clear and structured context
         if retrieved_chunks:
             context = "\n\n".join(retrieved_chunks)
@@ -41,12 +42,14 @@ class AI_Agent():
             context = ""
 
         # Create a more explicit and task-specific prompt
-        prompt_file_path = str(self.prompt_dir) + '/financial_prompt.txt'
+        prompt_file_path = str(self.prompt_dir) + f"/{self.prompt_type}_prompt.txt"
         with open(prompt_file_path) as f:
             prompt = f.read()
             prompt = prompt.format(
                 user_query = user_query,
                 context = context,
+                ground_truth = ground_truth,
+                agent_answer = agent_answer,
             )
         return prompt
     
@@ -63,12 +66,6 @@ class AI_Agent():
                 encoding="utf-8"
             )
             # Return the standard output
-
-            print("PRINTING STDOUT RAW ")
-            print(result.stdout)
-            print("PRINTING STDOUT ERROR")
-            print(result.stderr)
-            print("DONE PRINTING ")
             return result.stdout.strip()
         except Exception as e:
             print("Error during Ollama subprocess call:", str(e))
@@ -83,15 +80,15 @@ class AI_Agent():
         return 
 
 
-    def run(self, user_query, verbose):
+    def run(self, user_query, verbose, ground_truth = None, agent_answer = None):
         model = SentenceTransformer(EMBEDDER_MODEL)
         index = faiss.read_index("data/embedded/financial_report_index.faiss")
         with open("data/embedded/financial_report_metadata.json", "r", encoding="utf-8") as file:
             metadata = json.load(file)
         retrieved_chunks = self.retrieve_chunks(query = user_query, index = index, metadata = metadata, model = model)
-        final_prompt = self.create_prompt(user_query = user_query, retrieved_chunks=retrieved_chunks)
+        final_prompt = self.create_prompt(user_query = user_query, retrieved_chunks=retrieved_chunks, ground_truth = ground_truth, agent_answer = agent_answer)
         if verbose: print(final_prompt)
         answer = self.generate_answer(prompt = final_prompt)
         print(answer)
         self.log_run(user_query = user_query, final_prompt = final_prompt, final_output = answer, retrieved_chunks = retrieved_chunks, metadata = metadata)
-        return 
+        return answer

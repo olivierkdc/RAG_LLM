@@ -19,7 +19,7 @@ from agent.base import AI_Agent
 def prepare_RAG_dataset(company_name = "freddie_mac"):
     """
     Runs necessary steps to prepare the vector database for the RAG process.
-    If this function is not executed first, we will be querying an empty database and the agent will not have the context to support answers.
+    If this functione is not executed first, we will be querying an empty database and the agent will not have the context to support answers.
     """
     print("Preparing RAG Dataset")
     
@@ -88,7 +88,8 @@ def prepare_RAG_dataset(company_name = "freddie_mac"):
     embedding_array = np.array(embeddings, dtype="float32")
 
     # Initialize a FAISS index
-    index = faiss.IndexFlatL2(embedding_dim)  # L2 distance for similarity search
+    # index = faiss.IndexFlatL2(embedding_dim)  # L2 distance for similarity search
+    index = faiss.IndexFlatIP(embedding_dim)  # cosine similarity for similarity search
 
     # Add embeddings to the index
     index.add(embedding_array)
@@ -114,7 +115,7 @@ def execute_LLM_agent(verbose = False):
     :param verbose: Description turns on verbosity for the run of the agent. This will print the final prompts passed to the Agent.
     """
     print("Executing LLM")
-    AI = AI_Agent()
+    AI = AI_Agent(prompt_type = 'financial')
     print("Please utilize the AI Agent! Type 'exit' to quit.")
     while True:
         user_query = input('\nEnter your natural language query:\n')
@@ -124,16 +125,30 @@ def execute_LLM_agent(verbose = False):
             break
         AI.run(user_query, verbose = verbose)
 
-def benchmark_agent():
+def benchmark_agent(verbose = True):
     """
-    WORK IN PROGRESS
-    This function will allow the user to evaluate the performance of the agent against a ground truth database.
-    The purpose of this function is to guide the development of the agents to identify the strengths and weakenesses of the model.    
     """
-    print("Work in progress! This function does not perform anything yet.")
+    print("Evaluating LLM against testing dataset")
+    Evaluation_AI = AI_Agent(prompt_type='evaluation')
+    Generator_AI = AI_Agent(prompt_type = 'financial')
+    test_question_file_path = "./agent/evaluation/evaluation.json"
+    with open(test_question_file_path) as json_file:
+        evaluation_data = json.load(json_file)    
+    
+    for question in evaluation_data:
+        data = evaluation_data[question]
+        user_query = data['question']
+        ground_truth = data['answer']
+
+        if verbose:
+            print(data)
+
+        agent_answer = Generator_AI.run(user_query, verbose = False)
+        evaluation_answer = Evaluation_AI.run(user_query,ground_truth=ground_truth,agent_answer=agent_answer, verbose = False)
     return 
 
-if __name__ == '__main__':
+
+def main():
     if len(sys.argv) == 1:
         print("Please provide a job_type parameter. Pass 'LLM' to chat with the agent, or pass 'RAG' to prepare the dataset.") 
     else:
@@ -146,3 +161,6 @@ if __name__ == '__main__':
             benchmark_agent()
         else:
             print("Please specify a proper job_type. Pass 'LLM' to chat with the agent, or pass 'RAG' to prepare the dataset.")
+
+if __name__ == '__main__':
+    main()

@@ -1,0 +1,9 @@
+{
+    "Q1":{"question":"What is the company is mentioned in the financial document?","answer":"Freddie Mac."},
+    "Q2":{"question":"What is the fiscal quarter that the documents are related to?","answer":"The documents refer to Q3 of 2025."},
+    "Q3":{"question":"How many shares of Freddie Mac common stock are oustanding?","answer":"There are 650,059,553 shares outstanding."},
+    "Q4":{"question":"Based on the consolidated financial results, what was the Net Revenue and Net Income in Q3 of 2025?","answer":"Net Revenue and Net Income were 46 billion dollars in Q3 of 2025."},
+    "Q5":{"question":"Based on the consolidated financial results, what is the Net Worth of Freddie Mac in Q3 of 2025?","answer":"The Net Worth is 156 billion dollars."},
+    "Q6":{"question":"Based on the consolidated financial results, what net interest income for Freddie Mac in Q3 of 2025?","answer":"The net interest income was $5,455 million dollars in Q3 of 2025."},
+    "Q7":{"question":"Based on the consolidated financial results, what is the net revenue of Freddie Mac in Q3 of 2025?","answer":"The Net Worth is 5,739 million dollars"}
+}

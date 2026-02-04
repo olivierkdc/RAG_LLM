@@ -10,14 +10,14 @@ fmcc-20250930.htm3,303
 UNITED STATES SECURITIES AND EXCHANGE COMMISSION
 Washington, D.C. 20549
  FORM 10-Q  
-
+☒
 QUARTERLY REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934.
  
 For the quarterly period ended September 30, 2025
 or 
 ☐	TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934.
  
-For the transition period from to
+For the transition period from                                       to
 Commission File Number: 001-34139
 primarylogoa04.jpg
 Federal Home Loan Mortgage Corporation
@@ -212,7 +212,13 @@ Management's Discussion and Analysis		Introduction
  
 Business Results
 Consolidated Financial Results  
-
+ 
+Net Revenues and Net Income
+(In billions)
+46
+Net Worth
+(In billions)
+156
 Key Drivers:
 n    Net income was $2.8 billion, down 11% from 3Q 2024, primarily driven by a credit reserve build in 3Q 2025, compared to a credit reserve release in 3Q 2024.
 n    Net revenues were $5.7 billion, a decrease of 2% year-over-year, primarily driven by lower non-interest income, partially offset by higher net interest income.
@@ -220,7 +226,8 @@ n    Net worth was $67.6 billion as of September 30, 2025, up from $56.4 billion
 Market Liquidity  
  
 Market Liquidity
-
+(In thousands)
+36
 We support the U.S. housing market by executing our mission to provide liquidity and help maintain credit availability for new and refinanced single-family mortgages as well as for rental housing. We provided $124 billion in liquidity to the mortgage market in 3Q 2025, which enabled the financing of 483,000 home purchases, refinancings, and rental units.
 Freddie Mac 3Q 2025 Form 10-Q		
 2
@@ -231,7 +238,8 @@ Mortgage Portfolio Balances
  
 
 Mortgage Portfolio
-
+(UPB in billions)
+42
 Key Drivers:
 n    Our mortgage portfolio increased 2% year-over-year to $3.6 trillion at September 30, 2025, continuing to grow at a moderate pace.
 l    Our Single-Family mortgage portfolio was $3.1 trillion at September 30, 2025, up 2% year-over-year.
@@ -252,6 +260,62 @@ Freddie Mac 3Q 2025 Form 10-Q
 3
  
 Management's Discussion and Analysis		Housing and Mortgage Market Conditions
+ 
+HOUSING AND MORTGAGE MARKET CONDITIONS
+The charts below present certain housing and mortgage market indicators that can significantly affect our business and financial results. Certain market and macroeconomic prior period data have been updated to reflect revised historical data. For additional information on the effect of these indicators on our business and financial results, see MD&A – Consolidated Results of Operations and MD&A – Our Business Segments.
+Single-Family 
+ 
+U.S. Single-Family Home Sales and House Prices
+105Sources: National Association of Realtors, U.S. Census Bureau, and Freddie Mac House Price Index (seasonally adjusted rate). The 3Q 2025 new homes sales data is not yet available.
+
+U.S. Single-Family Mortgage Originations
+(UPB in billions)
+
+334
+Source: Freddie Mac and Fannie Mae.
+Single-Family Serious Delinquency Rates
+
+
+415
+Source: Freddie Mac and National Delinquency Survey from the Mortgage Bankers Association. The 3Q 2025 total mortgage market rate is not yet available.
+
+
+Single-Family Mortgage Debt Outstanding
+
+(UPB in trillions)
+4
+Source: Freddie Mac and Federal Reserve Financial Accounts of the United States of America. The 3Q 2025 U.S. single-family mortgage debt outstanding balance is not yet available.
+Freddie Mac 3Q 2025 Form 10-Q		
+4
+ 
+Management's Discussion and Analysis		Housing and Mortgage Market Conditions
+ 
+Multifamily  
+ 
+Apartment Vacancy Rates and Change in Effective Rents
+
+60Source: Moody's Analytics.
+
+
+Multifamily Quarterly Property Price Growth Rate
+
+140
+Source: Real Capital Analytics Commercial Property Price Index (RCA CPPI).
+
+
+Multifamily Delinquency Rates
+249Source: Freddie Mac, FDIC Quarterly Banking Profile, Intex Solutions, Inc., and Wells Fargo Securities (Multifamily CMBS conduit market, excluding REOs). The 3Q 2025 delinquency rate for FDIC insured institutions is not yet available.
+
+
+
+Multifamily Mortgage Debt Outstanding
+(UPB in billions)
+545Source: Freddie Mac and Federal Reserve Financial Accounts of the United States of America. The 3Q 2025 U.S. multifamily mortgage debt outstanding balance is not yet available.
+Freddie Mac 3Q 2025 Form 10-Q		
+5
+ 
+Management's Discussion and Analysis		Consolidated Results of Operations
+ 
 
 CONSOLIDATED RESULTS OF OPERATIONS
 The discussion of our consolidated results of operations should be read in conjunction with our condensed consolidated financial statements and accompanying notes.
@@ -566,8 +630,62 @@ Reflects results from our purchase, securitization, and guarantee of single-fami
 Multifamily	
 Reflects results from our purchase, securitization, and guarantee of multifamily loans, our investments in multifamily loans and mortgage-related securities, and the management of Multifamily mortgage credit risk and market risk.
  
+Segment Net Revenues and Net Income 
+ 
+The charts below show our net revenues and net income by segment.
+Segment Net Revenues
+(In billions)38
+Segment Net Income
+(In billions)72
+Freddie Mac 3Q 2025 Form 10-Q		
+13
+ 
+Management's Discussion and Analysis	
+Our Business Segments | Single-Family
+ 
+Single-Family
+Business Results 
+ 
+The charts, tables, and related discussion below present the business results of our Single-Family segment.
+New Business Activity 
+ 
+UPB of Single-Family Loan Purchases and Guarantees by Loan Purpose and Average Estimated Guarantee Fee Rate(1) on New Acquisitions
+(UPB in billions)152
+(1)Estimated guarantee fee rate calculations exclude the legislated guarantee fees and include deferred fees recognized over the estimated life of the related loans based on month-end market rates for the month of acquisition.
+Number of Families Helped to Own a Home and Average Loan UPB of New Acquisitions
 
+(Loan count in thousands)
+488
+Key Drivers:
+n    3Q 2025 vs. 3Q 2024 and YTD 2025 vs. YTD 2024
+l    New business activity increased primarily driven by an increase in refinance activity.
+l    The average estimated guarantee fee rate on new acquisitions decreased primarily due to lower estimated prepayment rates and a decrease in the proportion of 30-year fixed-rate loans among new acquisitions.
+l    The average loan size of new acquisitions increased during YTD 2025 compared to YTD 2024 primarily due to house price appreciation in recent periods.
+Freddie Mac 3Q 2025 Form 10-Q		
+14
+ 
+Management's Discussion and Analysis	
+Our Business Segments | Single-Family
+ 
+Single-Family Mortgage Portfolio 
+ 
+Single-Family Mortgage Portfolio and Average Estimated Guarantee Fee Rate(1) on Mortgage Portfolio
+(UPB in billions)120
+(1)Estimated guarantee fee rate calculations include deferred fees recognized over the estimated life of the related loans based on month-end market rates for the month of acquisition. These calculations exclude the legislated guarantee fees and certain loans, the majority of which are held by VIEs that we do not consolidate. The UPB of these excluded loans was $39 billion as of September 30, 2025.
+Single-Family Mortgage Loans
+(Loan count in millions)556
+Key Drivers:
+n    September 30, 2025 vs. September 30, 2024
+l    Our Single-Family mortgage portfolio was $3.1 trillion at September 30, 2025, up 2% year-over-year. The mortgage portfolio continued to grow at a moderate pace.
+l    The average loan size of our Single-Family mortgage portfolio increased year-over-year primarily due to house price appreciation in recent periods, which contributed to new business acquisitions having a larger loan size compared to older vintages that continued to run off.
+Freddie Mac 3Q 2025 Form 10-Q		
+15
+ 
+Management's Discussion and Analysis	
+Our Business Segments | Single-Family
+ 
 Financial Results  
+ 
 The table below presents the results of operations for our Single-Family segment. See Note 11 for additional information about segment financial results.
 Table 11 - Single-Family Segment Financial Results  
 Change					Change
@@ -611,6 +729,12 @@ Business Results
 The charts, tables, and related discussion below present the business results of our Multifamily segment.
 New Business Activity and Securitization Activity  
  
+New Business Activity and Units Financed(1)
+(UPB in billions)
+237 (1) Includes rental units financed by supplemental loans.
+New Securitization Activity(2)
+(UPB in billions) 412 (2) Excludes resecuritizations.
+
 Key Drivers:
 n    3Q 2025 vs. 3Q 2024 and YTD 2025 vs. YTD 2024
 l    New business activity increased during the 2025 periods, primarily driven by a larger multifamily originations market, coupled with the execution of our competitive strategies. Approximately 68% of the YTD 2025 activity, based on UPB, was mission-driven affordable housing, exceeding FHFA's minimum requirement of 50%.
@@ -630,7 +754,10 @@ Multifamily Mortgage Portfolio and Guarantee Exposure
  
 
 Mortgage Portfolio
-
+(UPB in billions)
+272
+Guarantee Exposure
+(UPB in billions) 464
 Key Drivers:
 n    September 30, 2025 vs. September 30, 2024
 l    Our mortgage portfolio increased 6% year-over-year, driven by our new business activity.
@@ -678,6 +805,7 @@ Freddie Mac 3Q 2025 Form 10-Q
 19
  
 Management's Discussion and Analysis		Risk Management
+ 
 
 
 RISK MANAGEMENT
@@ -735,8 +863,16 @@ Management's Discussion and Analysis		Risk Management
 n 3Q 2025 vs. 3Q 2024 and YTD 2025 vs. YTD 2024 - The increase in charge-offs was primarily driven by a pool of Multifamily senior housing loans during 3Q 2025.
 n September 30, 2025 vs. December 31, 2024 - The balance of non-accrual loans increased 2% primarily driven by the loans in the Multifamily senior housing pool that were placed on non-accrual status and the 1% increase in the balance of non-accrual loans in Single-Family.
 Single-Family Mortgage Credit Risk 
-
-
+ 
+Maintaining Prudent Eligibility Standards and Quality Control Practices and Managing Seller/Servicer Performance 
+ 
+Loan Purchase Credit Characteristics
+We monitor and evaluate market conditions that could affect the credit quality of our single-family loan purchases. Additionally, when managing our new acquisitions, we consider our risk limits and guidance from FHFA and capital requirements under the ERCF. This may affect the volume and characteristics of our loan acquisitions.
+The charts below show the credit profile of the single-family loans we purchased.
+Weighted Average Original LTV Ratio 148
+Weighted Average Original Credit Score(1)191
+(1)Weighted average original credit score is generally based on three credit bureaus (Equifax, Experian, and TransUnion).
+Weighted Average Original DTI Ratio348
 Freddie Mac 3Q 2025 Form 10-Q		
 21
  
@@ -976,11 +1112,15 @@ See Note 12 for more information about the geographic distribution of our Single
 Delinquency Rates
 We report Single-Family delinquency rates based on the number of loans in our Single-Family mortgage portfolio that are past due as reported to us by our servicers as a percentage of the total number of loans in our Single-Family mortgage portfolio.
 The chart below presents the delinquency rates of mortgage loans in our Single-Family mortgage portfolio.
+380
 The percentage of loans that were one month past due decreased, while the percentage of loans that were two months past due increased, as of September 30, 2025 compared to September 30, 2024. The percentage of loans one month past due can be volatile due to seasonality, whether the last day of the period falls on a weekend, and other factors that may not be
 Freddie Mac 3Q 2025 Form 10-Q		
+26
  
 Management's Discussion and Analysis		Risk Management
  
+
+
 indicative of default. As a result, the percentage of loans two months past due tends to be a better early performance indicator than the percentage of loans one month past due.
 Our Single-Family serious delinquency rate increased to 0.57% as of September 30, 2025, compared to 0.54% as of September 30, 2024, primarily due to a higher serious delinquency rate for loans originated during 2022 and later. See Note 3 for additional information on the payment status of our single-family mortgage loans.
 Engaging in Loss Mitigation Activities 
@@ -1008,6 +1148,20 @@ Total		$18,571 		71	$14,479 		57
 Completed loan workout activity includes forbearance plans where borrowers fully reinstated the loan to current status during or at the end of the forbearance period, payment deferral plans, loan modifications, successfully completed repayment plans, short sales, and deeds in lieu of foreclosure. Completed loan workout activity excludes active loss mitigation activity that was ongoing and had not been completed as of the end of the period, such as forbearance plans that had been initiated but not completed and trial period modifications. There were approximately 15,000 loans in active forbearance plans and approximately 19,000 loans in other active loss mitigation activity as of September 30, 2025.
 Multifamily Mortgage Credit Risk 
  
+Completing Our Own Underwriting, Credit, and Legal Review for New Business Activity  
+ 
+Our underwriting standards focus on the LTV ratio and DSCR, which estimates the value of the collateral and a borrower's ability to repay the loan using the secured property's cash flows, after expenses. The charts below provide the weighted average original LTV ratio and original DSCR for our new business activity.
+Freddie Mac 3Q 2025 Form 10-Q		
+27
+ 
+Management's Discussion and Analysis		Risk Management
+ 
+
+
+Weighted Average Original LTV Ratio 150
+Weighted Average Original DSCR(1)
+194
+(1) Assumes monthly payments that reflect amortization of principal.
 Transferring Credit Risk to Third-Party Investors 
  
 We engage in a variety of CRT activities which transfer credit risk on the Multifamily mortgage portfolio, thereby reducing our overall credit risk exposure and required capital.
@@ -1087,6 +1241,7 @@ Freddie Mac 3Q 2025 Form 10-Q
 29
  
 Management's Discussion and Analysis		Risk Management
+ 
 
 
 and liabilities from an instantaneous shock to interest rates, assuming spreads are held constant and no rebalancing actions are undertaken. PVS is measured in two ways, one measuring the estimated sensitivity of our portfolio's value to a 50 bps parallel movement in interest rates (PVS-L) and the other to a nonparallel movement (PVS-YC), resulting from a 25 bps change in slope of the yield curve. While we believe that duration gap and PVS are useful risk management tools, they should be understood as estimates rather than as precise measurements.
@@ -1142,6 +1297,7 @@ Freddie Mac 3Q 2025 Form 10-Q
 30
  
 Management's Discussion and Analysis		Risk Management
+ 
 
 
 The table below presents the change in estimated income post-tax due to the impact of a parallel shift in rates on financial instruments not primarily funded by debt over the next 12 months relative to the baseline scenario.
@@ -1174,6 +1330,8 @@ Freddie Mac 3Q 2025 Form 10-Q
  
 Management's Discussion and Analysis		Risk Management
  
+
+
 Table 29 - GAAP Fair Value Sensitivity to Changes in Interest Rates  
 (In millions)		September 30, 2025		September 30, 2024
 Interest rate scenarios(1)
@@ -1193,7 +1351,7 @@ Freddie Mac 3Q 2025 Form 10-Q
 32
  
 Management's Discussion and Analysis		Liquidity and Capital Resources
-
+ 
 
 LIQUIDITY AND CAPITAL RESOURCES
 Our business activities require that we maintain adequate liquidity to meet our financial obligations as they come due and to meet the needs of customers in a timely and cost-efficient manner. We also must maintain adequate capital resources to avoid being placed into receivership by FHFA.
@@ -1313,6 +1471,7 @@ Freddie Mac 3Q 2025 Form 10-Q
 35
  
 Management's Discussion and Analysis		Liquidity and Capital Resources
+ 
 
 The table below shows the issuance and extinguishment activity for the debt of consolidated trusts.
 Table 34 - Debt of Consolidated Trusts Activity 
@@ -1335,6 +1494,7 @@ Freddie Mac 3Q 2025 Form 10-Q
  
 Management's Discussion and Analysis		Liquidity and Capital Resources
  
+
 Capital Resources
 The table below presents activity related to our net worth.
 Table 35 - Net Worth Activity 

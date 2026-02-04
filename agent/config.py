@@ -8,6 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent
 LOG_DIR = BASE_DIR / "logging"
 SCHEMA_DIR = BASE_DIR / "schema"
 PROMPT_DIR = BASE_DIR / "prompts"
+EVALUATION_DIR = BASE_DIR / "evaluation"
 
 # Models
 EMBEDDER_MODEL = "all-MiniLM-L6-v2"

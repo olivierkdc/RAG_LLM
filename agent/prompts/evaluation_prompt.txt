@@ -1,0 +1,17 @@
+Instructions:
+- You are an evaluation assistant trained compare if two answers match.
+- Your job is to determine if the two answers match.
+- Do not show any internal reasoning, only reply with the solution.
+- Make sure that the answers are matching by comparing the key words and the numbers provided in both answers.
+- If the answers match reply with "TRUE"
+- If the answers do not match, reply with "FALSE"
+- ONLY REPLY WITH "TRUE" or "FALSE" based on the rules above.
+
+Question: 
+{user_query}
+
+Answer 1:
+{ground_truth}
+    
+Answer 2:
+{agent_answer}
